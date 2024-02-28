@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime merch</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="content">
+            <p> We're launching our merch soon!</p>
+<p style="color: white;"></p>
+<h1> BRINGING OUT THE OTAKU IN YOU</h1>
+<h style="color:white ;"></h>
+<div class="launch-time">
+<div>
+<p id="days">00</p>
+<span>Days</span>
+
+</div>
+<div>
+<p id="hours">00</p>
+<span>Hours</span>
+</div>
+<div>
+<p id="minutes">00</p>
+<span>Minutes</span>
+</div>
+<div>
+<p id="seconds">00</p>
+<span>Seconds</span>
+</div>
+
+</div>
+
+</div>
+
+<button type="button"> Learn more</button>
+        </div>
+<img src="images/6-63917_free-cruise-ship-clip-art.png" class="rocket">
+    </div>
+    <script>
+        var countdownDate=new Date("March 10, 2024 00:00:00").getTime();
+        var x=setInterval(function (){
+            var now=new Date().getTime();
+            
+            var distance=countdownDate-now;
+ var days=Math.floor(distance%(1000*60*60*24*30)/(1000*60*60*24));
+var Hours= Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+var Minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+var seconds= Math.floor((distance%(1000*60))/1000);
+document.getElementById("days").innerHTML=days;
+document.getElementById("hours").innerHTML=Hours;
+document.getElementById("minutes").innerHTML=Minutes;
+document.getElementById("seconds").innerHTML=seconds;
+},1000);
+
+
+
+    
+    </script>
+</body>
+</html>
+
