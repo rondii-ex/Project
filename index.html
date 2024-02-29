@@ -4,7 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime merch</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>*
+        {
+        margin: 0;
+        padding:0;
+        
+        font-size: large;
+        box-sizing: border-box;
+        }
+        .container{
+        width: 100vw;
+        height: 100vh;
+        background-image: url('IMG_20240226_141738_158.jpg');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #fff;
+        padding: 0 10%;;
+        }
+        .content{
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+        }
+        .content p{
+        font-size: 35px;
+        font-weight: 5000;
+        }
+        
+        .content button{
+        background: transparent;
+        border:2px solid #fff;
+        outline: none;
+        padding:12px 25px;
+        color: #fff;
+        
+        }
+        .launch-time{
+            display: flex;
+        }
+        .launch-time div{
+        flex-basis: 100px;
+        }
+        .launch-time div p{
+        font-size: 60px;
+        margin-bottom: -14px;
+        }
+        
+        .rocket{
+        width: 80px;
+        position: absolute;
+        right:25%;
+        bottom: 0;
+        animation:rocket 4s linear infinite;
+        }
+        @keyframes rocket{
+        0%{
+        
+            bottom: 0;
+            opacity: 1;
+        }
+        100%{
+            bottom: 105%;
+            opacity: 0.5;
+        }
+        
+        }</style>
 </head>
 <body>
     <div class="container">
@@ -39,7 +105,7 @@
 
 <button type="button"> Learn more</button>
         </div>
-<img src="images/6-63917_free-cruise-ship-clip-art.png" class="rocket">
+<img src='6-63917_free-cruise-ship-clip-art.png' class="rocket"> 
     </div>
     <script>
         var countdownDate=new Date("March 10, 2024 00:00:00").getTime();
